@@ -12,8 +12,6 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route element={<PrimaryLayout />}>
-            {" "}
-            //Higher Order Component
             <Route path="/" element={<Home />} />
             <Route path="/chat" element={<Chat />} />
             <Route path="/quiz" element={<Quiz />} />
