@@ -8,6 +8,7 @@ const Home = () => {
         <h1>THE 3 Musketters </h1>
         <p>This will be our project applition</p>
         <p>Task 1: Build Header of the page - Saroj Shahi</p>
+        <p>Task 2: Set up React Routers</p>
       </div>
     </div>
   )
