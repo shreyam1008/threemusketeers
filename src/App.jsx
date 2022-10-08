@@ -1,26 +1,27 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Components/Layout";
 import Home from "./Pages/Home";
 import Chat from "./Pages/Chat";
 import Quiz from "./Pages/Quiz";
+import PrimaryLayout from "./Layouts/PrimaryLayout";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div classname="App">
+    <div classname="App">
+      <BrowserRouter>
         <Routes>
-          <Route element={<Layout />}>
+          <Route element={<PrimaryLayout />}>
             {" "}
             //Higher Order Component
             <Route path="/" element={<Home />} />
             <Route path="/chat" element={<Chat />} />
             <Route path="/quiz" element={<Quiz />} />
+            <Route path="*" element={<div>Page not found</div>} />
           </Route>
         </Routes>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </div>
   );
 };
 
