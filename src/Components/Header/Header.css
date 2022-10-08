@@ -1,0 +1,25 @@
+.header_navbar{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  17px 17px 34px #a6a6a6,
+             -17px -17px 34px #ffffff;
+}
+
+.menu{
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.menu_link{
+    color:black;
+    text-decoration: none;
+}
